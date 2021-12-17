@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkScore(){
+            var score = 100;
+            document.getElementById('scoreVal').value = score;
+        }
+            function change(op){
+                var score = parseInt(document.getElementById('scoreVal').value);
+                if(op == '+'){
+                    document.getElementById('scoreVal').value = score + 1;
+                }
+                if(op == '-'){
+                    document.getElementById('scoreVal').value = score - 1;
+                }
+
+                
+            }
+    </script>
+    <style>
+        img{
+            border:5px double gold;
+            border-radius: 50%;
+            margin:30px;
+            transition: border-radius 4s, box-shadow 4s, transform 4s;
+        }
+        img:hover{
+            border-radius:20px;
+            box-shadow: 4px 4px 3px black;
+            transform:rotate(360deg);
+        }
+        
+    </style>
+</head>
+<body bgcolor="lightblue">
+    <img src="iphone.jpg" height=200 width=200>
+    <img src="oppo.jpg" height=200 width=200>
+    <br><br>
+    <form name='f1'>
+        <br><br>
+        <script>
+            function showProgress(val){
+                document.getElementById('progress1').value += val;
+                document.getElementById('progOutput').value = document.getElementById('progress1').value;
+                
+            }
+        </script>
+        <h1>Progress Bar</h1>
+        <progress  id="progress1" max=100 min=0 value=0></progress>
+        <output id="progOutput" for="progress1">
+            0
+        </output>%
+        <br><br>
+        <input type="checkbox" value="25" onchange="showProgress(25)"> Task 1<br>
+        <input type="checkbox" value="25" onchange="showProgress(25)"> Task 2<br>
+        <input type="checkbox" value="25" onchange="showProgress(25)"> Task 3<br>
+        <input type="checkbox" value="25" onchange="showProgress(25)"> Task 4<br>
+
+
+
+        <br><br><br><br>
+        <input type="text" id='scoreVal' placeholder="Score is"><br><br>
+        <input type="button" value="Check Score" onclick="checkScore()"><br>
+        <input type="button" value="+" onclick="change('+')">
+        <input type="button" value="-" onclick="change('-')"><br><br>
+        <h1>Display Length of the input string</h1>
+        <input type="text" name='txtString' onkeyup="strLenOutput.value=txtString.value.length">
+        Result:
+        <output name="strLenOutput">
+
+        </output>
+        
+    </form>
+</body>
+</html>

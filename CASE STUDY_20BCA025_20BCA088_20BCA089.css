@@ -1,0 +1,156 @@
+#logo{
+    height: 50mm;
+    width: 50mm;
+    border:5px solid lightgoldenrodyellow;
+ }
+ 
+ h1{
+    color:lightgoldenrodyellow;
+    display:  inline;
+    font-family:'Arial, Helvetica, sans-serif active';
+    font-size:15mm ;
+ 
+ }
+ #nav{
+    list-style-type:none;
+    margin: 0;
+    padding:0;
+    overflow:hidden;
+    background-color:rgb(7, 7, 6);
+    border-bottom: 6px double cornsilk;
+    border-top: 10px double cornsilk;
+ }
+ #nav li{
+    float: left;
+    border-right: 5px solid rgb(236, 233, 233);
+ }
+ 
+ li a{
+    display:block;
+    color: white;
+    text-align:6mm;
+    font-size:none;
+    text-decoration:none;
+    padding: 12px 14px;
+ 
+ }
+ 
+ .cl1{
+    width:20%;
+    float:left;
+    height:100%;
+    margin: 3mm;
+ }
+ a{
+    text-decoration: none;
+    size:5mm;
+    color:white;
+ } 
+ footer{
+    background:black;
+    color:white;
+    clear:both;
+    height:40px;
+    padding:0px;
+    margin-bottom:0px;
+ 
+ }
+ 
+ table,th,tr,td{
+    text-align: left;
+    border:1px solid white;
+    border-collapse:collapse;
+    padding:3px;
+ }
+ 
+ th{
+    background:black;
+    color:white;
+    font-size: 6mm;
+    padding:3px;
+    margin:0;
+ } 
+ td a:hover{
+    font-size: 6.5mm;
+    text-decoration:underline;
+ 
+ }
+ #footer{
+    text-align:center;
+    border:1px solid black;
+ }
+ li a:hover{
+    font-size: 6.5mm;
+    text-decoration:aqua;
+ }
+ #saheb{
+    width: 40mm;
+    height: 30mm;
+    border:5px solid gold;
+    border-radius: 50%;
+    margin:30px;
+    transition: border-radius 4s, box-shadow 4s, transform 4s;
+}
+#saheb:hover{
+    width: 60mm;
+    height: 60mm;
+    border-radius:20px;
+    box-shadow: 4px 4px 3px black;
+    transform:rotate(360deg);
+}
+
+
+ #saheb1{
+    width: 40mm;
+    height: 30mm;
+    border:5px solid gold;
+    border-radius: 50%;
+    margin:30px;
+    transition: border-radius 4s, box-shadow 4s, transform 4s;
+}
+#saheb1:hover{
+    width: 60mm;
+    height: 60mm;
+    border-radius:20px;
+    box-shadow: 4px 4px 3px black;
+    transform:rotate(360deg);
+}
+
+
+ #saheb2{
+    width: 40mm;
+    height: 30mm;
+    border:5px solid gold;
+    border-radius: 50%;
+    margin:30px;
+    transition: border-radius 4s, box-shadow 4s, transform 4s;
+}
+#saheb2:hover{
+    width: 60mm;
+    height: 60mm;
+    border-radius:20px;
+    box-shadow: 4px 4px 3px black;
+    transform:rotate(360deg);
+}
+
+
+
+#saheb3{
+    width: 40mm;
+    height: 30mm;
+    border:5px solid gold;
+    border-radius: 50%;
+    margin:30px;
+    transition: border-radius 4s, box-shadow 4s, transform 4s;
+}
+#saheb3:hover{
+    width: 60mm;
+    height: 60mm;
+    border-radius:20px;
+    box-shadow: 4px 4px 3px black;
+    transform:rotate(360deg);
+}
+
+
+
+

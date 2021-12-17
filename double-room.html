@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Room</title>
+    <style>
+        .h{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            color: white;
+        }
+        .n1{
+            width: 10cm;
+            height: 10cm;
+            border-radius: 10px;
+            border: 5px solid lightgreen;
+        }
+        .ll{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size:x-small;
+            color: white;
+        }
+        .pp{
+            text-align: center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: xx-large;
+            color: white;
+        }
+    </style>
+</head>
+<body background="back.jpg">
+    <header class="h">
+        Double Room.
+    </header>
+    <br>
+    <center><img class="n1" src="double.jpg"></center>
+    <br>
+    <section>
+    <center>
+        <h1 class="h"> Check the Price</h1>
+    </center>
+        <script>
+            function displayPrice(){
+                var price = document.getElementById('selType').value;
+                document.getElementById('txtPrice').value = price;
+            }
+            function calculatePrice(){
+                var p =  document.getElementById('txtPrice').value;
+                var q =  document.getElementById('txtQty').value;
+                document.getElementById('txtTotalPrice').value = (p * q);
+            }
+        </script>
+        <form>
+            <center>
+            <h3 class="ll">Select The type of Double Room:</h3><select id="selType" onchange="displayPrice()">
+                <option value="2000"> Double Room With AC</option>
+                <option value="4000"> Double Room Without AC</option>
+            </select><br>
+            <input type="text" value="0" disabled id="txtPrice"><br>
+            <h3 class="ll">Quantity:</h3><input type="number" id="txtQty"><br>
+            <input type="button" value="calculate Price" onclick="calculatePrice()"><br>
+            <h3 class="ll">Total price:</h3>:<input type="text" id="txtTotalPrice">
+        </center>
+        </form>
+        <h1 class="pp">THANK YOU FOR COMING IN HOTEL.</h1>
+    </section>
+    s
+</body>
+</html>
